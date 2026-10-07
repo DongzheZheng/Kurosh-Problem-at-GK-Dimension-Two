@@ -1,7 +1,8 @@
 cff-version: 1.2.0
 message: "Please cite the paper when using this construction or its results."
 type: software
-title: "The Kurosh Problem at GK Dimension Two over Arbitrary Fields: Lean Formalization"
+title: "The Kurosh Problem at GK Dimension Two: Nil Algebras over Arbitrary Fields — Lean Formalization"
+repository-code: "https://github.com/DongzheZheng/Kurosh-Problem-at-GK-Dimension-Two"
 version: 1.0.0
 date-released: 2026-10-06
 authors:
@@ -27,7 +28,7 @@ keywords:
   - mathlib
 preferred-citation:
   type: article
-  title: "The Kurosh Problem at Gelfand–Kirillov Dimension Two over Arbitrary Fields"
+  title: "The Kurosh Problem at Gelfand–Kirillov Dimension Two: Nil Algebras over Arbitrary Fields"
   authors:
     - family-names: Zheng
       given-names: Denzel

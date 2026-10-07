@@ -1,10 +1,10 @@
-# The Kurosh Problem at GK Dimension Two over Arbitrary Fields
+# The Kurosh Problem at GK Dimension Two: Nil Algebras over Arbitrary Fields
 
 **Infinite-dimensional, two-generated nil algebras of Gelfand–Kirillov dimension two over every field.**
 
 This repository contains a Lean 4 formalization of a solution to the critical-dimension case of the quantitative Kurosh problem. The theorem answers Questions 5 and 6 in Bell–Small–Smoktunowicz's [*Primitive algebraic algebras of polynomially bounded growth*](https://doi.org/10.1090/conm/562/11129): the existence of infinite-dimensional affine algebraic algebras of finite GK dimension over uncountable fields, and the existence of an infinite-dimensional affine algebraic algebra of GK dimension exactly two. Both questions are recorded in the introduction to Greenfeld's [*The Quantitative Kurosh Problem*](https://doi.org/10.1017/fms.2025.1) (2025).
 
-**Paper:** [*The Kurosh Problem at Gelfand–Kirillov Dimension Two over Arbitrary Fields*](https://doi.org/10.13140/RG.2.2.14257.34406), Denzel Zheng.
+**Paper:** [*The Kurosh Problem at Gelfand–Kirillov Dimension Two: Nil Algebras over Arbitrary Fields*](https://doi.org/10.13140/RG.2.2.14257.34406), Denzel Zheng.
 
 ## Main theorem
 
