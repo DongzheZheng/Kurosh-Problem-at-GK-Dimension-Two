@@ -11,7 +11,7 @@ This repository contains a Lean 4 formalization of a solution to the critical-di
 Let $F$ be any field. There exists a two-generated, infinite-dimensional, positively graded nonunital $F$-algebra $Q$ such that
 
 $$
-\operatorname{GKdim} Q=2,
+\mathrm{GKdim}(Q)=2,
 \qquad
 M_r(Q\otimes_F K)\ \text{is nil for every }r\ge1\text{ and every field extension }K/F.
 $$
@@ -36,7 +36,7 @@ Kurosh asked in 1941 whether every finitely generated algebraic algebra is finit
 
 Lenagan–Smoktunowicz obtained polynomially bounded nil algebras over countable fields in 2007; Lenagan–Smoktunowicz–Young reduced the GK-dimension bound to three. Bell–Young developed arbitrary-field constructions with arbitrarily slow superpolynomial growth. Subsequent work by Smoktunowicz–Young, Smoktunowicz–Bartholdi, Alahmadi–Alsulami–Jain–Zelmanov, Greenfeld–Zelmanov, and Greenfeld advanced low-growth radical algebras and the realization of nil-algebra growth.
 
-The Bergman gap theorem, the Small–Stafford–Warfield dimension-one theorem, and Kaplansky's finiteness theorem for affine algebraic PI algebras place the infinite-dimensional algebraic problem at the critical boundary $\operatorname{GKdim}=2$. Shirshov's height theorem gives a combinatorial proof of the PI finiteness result. References and a timeline appear in [Background and references](docs/HISTORY.md).
+The Bergman gap theorem, the Small–Stafford–Warfield dimension-one theorem, and Kaplansky's finiteness theorem for affine algebraic PI algebras place the infinite-dimensional algebraic problem at the critical boundary $\mathrm{GKdim}=2$. Shirshov's height theorem gives a combinatorial proof of the PI finiteness result. References and a timeline appear in [Background and references](docs/HISTORY.md).
 
 ## Proof architecture
 
