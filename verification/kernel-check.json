@@ -1,0 +1,3947 @@
+{
+  "schema_version": 1,
+  "lean_version": "4.29.0",
+  "compiler_version": "Lean (version 4.29.0, x86_64-unknown-linux-gnu, commit 98dc76e3c0a9b856c9b98726b713fb04fab16740, Release)",
+  "mathlib_commit": "8a178386ffc0f5fef0b77738bb5449d50efeea95",
+  "mathlib_tracked_tree_clean": true,
+  "source_manifest_sha256": "d1a3675b2f2485e85b0e0c6a1d3f353dc76217cfcc533922eee297647c0b1647",
+  "sources_unchanged": true,
+  "source_count": 145,
+  "fresh_checked_file_count": 145,
+  "reused_checked_file_count": 0,
+  "axiom_query_count": 230,
+  "allowed_axiom_dependencies": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "required_endpoints": [
+    "CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil",
+    "CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil_default",
+    "CriticalGK2.Actual.exists_same_prime_critical_algebra_and_absolute_unitization",
+    "CriticalGK2.Actual.exists_unital_critical_gk_two_absolute_algebraic",
+    "CriticalGK2.Actual.originalField_critical_gk_two_absolute_nil_endpoint"
+  ],
+  "required_endpoints_audited": true,
+  "all_passed": true,
+  "verification_command": "lake env python3 scripts/verify.py",
+  "results": [
+    {
+      "file": "CriticalGK2/FactorComplexity.lean",
+      "source_sha256": "17ee114507902fac7a3c66aed8f70d3ea6a020228d235bd75d2c10da35fdcee4",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.WordLanguage.factorComplexity_ge_length_add_one_of_not_tailPeriodic",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.WordLanguage.factorPrefix_injective_of_equal_complexity",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.WordLanguage.tailPeriodic_of_equal_complexity",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "46eb67ef458d609f2587a7795dde49533311b572cf0c6fe468e5ce2a3c268956",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/InfiniteWordPath.lean",
+      "source_sha256": "1cac2dbf2a7449df11df5759decc48151339fd99c3f5aa45c76cc9cc82feb43e",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Language.exists_stream_factors_mem",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Language.exists_stream_prefix_mem",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Language.exists_unbounded_child",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "bfdc80fd99648c7fc98868b1ff2c3de8856f4d355f384d1ab5c69a788a0b6c05",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualWordSpaces.lean",
+      "source_sha256": "5428237c082b89774955d5a5683206e682e73eff14b3e4af2b02f7176a25dff5",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "22b93f0ff97c85c6d6bab97038324547248b301ce6720b665259b0114fab25a1",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/DyadicRoots.lean",
+      "source_sha256": "ab711c52037438ec71b3771863948fec8ae5044ed97efbe389e4c3ca756503c7",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualWordSpaces.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "bf9eaca5ba36ed7bbdee8ac98647670e3b2d826d8b06b3139efe27d63ff6692f",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PrimalCompletion.lean",
+      "source_sha256": "0d455a958f5382f149c0279c0aeb6ac438edb5be38272ea071bd254fe4eab359",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DyadicRoots.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "44fd0e82d12e243b2923dd08924768ce59642463afef42c71d948888f29c45dc",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WordProducts.lean",
+      "source_sha256": "a0bb35017b89115bc0aed848ba70d2f8583921a874eae9f54c91fe995a2baaa0",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualWordSpaces.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "36504e980ae6e0b7fa464382ea6f80f84d080c6d822e5e8302b409455eaedb72",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/CompletionSteps.lean",
+      "source_sha256": "d09a68d1e25d45846afeb6669bbfc1eadca1a2b4c47f9ca1c227da3f653dd387",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PrimalCompletion.lean",
+        "CriticalGK2/WordProducts.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "26bda147ca534c2b8d2a929755b7753e10527534c57baa32ff611aa219313478",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/AllCutEndpoints.lean",
+      "source_sha256": "a23f1d96f443fec9bc6536f45f0696abea01505788d1f7ab370652b7c840a3cb",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/CompletionSteps.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "5ecbed64e067ba3c75d54421c63a2e7a653888698696245204e09d8410edd10d",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/AllCutClosure.lean",
+      "source_sha256": "8aea5c94062b3a3314e8eea1dd78ea25aaef8f558d0c6d9b2b723a04ab604a31",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/AllCutEndpoints.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "50e44280c235a745d926a3b6126f9158982c687880e5fd0b1ee7b5e8a354e87e",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/AllCutIdeal.lean",
+      "source_sha256": "50ec11af6b7655c059f517429b1a964ac1c9aebdaad71801af1dcb3ac40fe272",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/AllCutClosure.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "f778258a8d9acfe01b1926b761504e4f224f1fa19565d011c240c07e969cfc1c",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/HomogeneousProjection.lean",
+      "source_sha256": "5c115fbb8666589b733959fae18428a4eb74d8d4b6d03746100fcaae6b0a9283",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/AllCutClosure.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "129e0bf04d4b6924109a4caab77fd7606a2ff57bb98c14594537a03c7d1d2d38",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WordSurvival.lean",
+      "source_sha256": "8c544c3a6d64b4db2137b3c18c93b048de1f2b713cf6755087b5e3bf76556f7b",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualWordSpaces.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "7e39b676ba24e81666aed9aa915db178f6a118b059e8c9f9881a5e2168b33d76",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveQuotient.lean",
+      "source_sha256": "fa57c8f02794d798a82075d1f3ca7e8f5fafa1f488684bfb51618bb0edc50952",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/AllCutIdeal.lean",
+        "CriticalGK2/HomogeneousProjection.lean",
+        "CriticalGK2/WordSurvival.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "4a18a22bd822c981c930e0f0e1c78eb77c1e22ab00e50560c5df15baf9c11587",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/NormalWordFactorial.lean",
+      "source_sha256": "db8afef250b3280bf36f621f7f3e556908f68bbad759215329abc5e167831bbe",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveQuotient.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.NormalWord_factor",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.earlierWordSpan_sandwich",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.WordOrder.lengthWordNumber_injective",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "a9b6a541a86592d7634478062e2e48816f8713705b9fac24a1686f62647b2037",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/MatrixPI.lean",
+      "source_sha256": "56cc2ad739b04e74d4307db22c7bf8a043fe035c1ff445dcedc1fc0820cbd839",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "62d18417149d935bbccd3129ab6cd1d31923c4331fdb2e0dcdbb30ee5014a56c",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/LocalOperation.lean",
+      "source_sha256": "9b3433d1c4bd575ffc3430de2aabbe9b709354f859f9d54f6d84dccebcb110a5",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/MatrixPI.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "1d27e13f24f02637b6b2504d6c93792b5641d15e4cdb2529d288faf5c0168052",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/LocalContainment.lean",
+      "source_sha256": "219bfd59f18c8bae7d686b4f2b8e4873a9f7f6fc0883292d408107499c990c1f",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/LocalOperation.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "8c5a3082ad2ce10661e0d137a110e6c193f06050a2104a261db189895afa9154",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/StemPolynomial.lean",
+      "source_sha256": "41a85866579b1dcfc39125d62131685533669977c197162e9ec127d8e2ad2ddd",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/LocalContainment.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "b6165905b92c54279702cc774b8907306d1c8a5d6ef53337c02ed12303debee5",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ScalarReadback.lean",
+      "source_sha256": "ab286abd2ba3b3ef1a1ff86bdedcaac0b159382a70f676cea9ad92549fcbb31a",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "0c9c1f943b6207130c416582ec138f6a8ba6c23be37b7b60155bf70709452cd9",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/LongCut.lean",
+      "source_sha256": "695e410ae92d2cb7356d501d7dde18fbc05f037bd6560b8f018e8641a5cbd48f",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ScalarReadback.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "f09e53f760c4a384c6e817f960d1bac9fba5f4cb9e2ae28d9eb21b3af7e76830",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WordTensor.lean",
+      "source_sha256": "393dbf87636e224da35114d9d458725ecbf1b402fefe35d348972e9e6dc22191",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualWordSpaces.lean",
+        "CriticalGK2/LongCut.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "d8bac70b6754fdcef5e60e68faf264dee202076132b6212353744bef6588b0c2",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WordCoherence.lean",
+      "source_sha256": "ebf9976e2578c6fe2c4a99488adb59883d0d9dd3426c692a871bf297a1ca11ad",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/WordTensor.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "1685c3c887339b2c2ebef5fb1bd3661726b92ef1684f757a9f069670ec3dc133",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/DualWordBridge.lean",
+      "source_sha256": "03b47edb866f920bd872e54fbab729aab8be46a83fc146e8e7c9e6c1c54bd9b0",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousProjection.lean",
+        "CriticalGK2/StemPolynomial.lean",
+        "CriticalGK2/WordCoherence.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "1aea2f5e4ec69b76b63cfb3141aa04f040ad99cddcdd1e802408e1923d021c39",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/DyadicDegreeCast.lean",
+      "source_sha256": "e14e128423f38a056c773b0d6f690e34608430f3a0541b62d7b3f3b5504d083c",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualWordSpaces.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "1cd86102091442e847721d5049a62e760b78e2af5efaaba5deecbb689f8a7651",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/DualDegreeBridge.lean",
+      "source_sha256": "dfa529c772332a961c76e1a5aed43d5fb793c3bea0432c0498306472fb3c409b",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DualWordBridge.lean",
+        "CriticalGK2/DyadicDegreeCast.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "f08ad45014097e04ece0848dd8ff66719a46ab3345e9a32e54042137a6b38ae8",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/CutDuality.lean",
+      "source_sha256": "66020393f170a847c76052c36dc5fb58ef689d47b0247036846f7147ad8412a8",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PrimalCompletion.lean",
+        "CriticalGK2/WordCoherence.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "bf92c40f245c2e1e1c1c45dd8a5f67e27d8cfd596e8f856a2147f9bff7551a3d",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/TensorCutDuality.lean",
+      "source_sha256": "74773b1dce4ef3e3de205cc9bf8767acd3e3058bc476c78f6621860b6660705b",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/CutDuality.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "08de6aa8cb10b7ed33d6e3a5e9d8aba6e0ae7864c76c717c67600d48ec06b2b0",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/HomogeneousCutTensor.lean",
+      "source_sha256": "6db3ebfe11fafac24651b243488a746a7814f078acf8c1830645955601a5bd0d",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DyadicDegreeCast.lean",
+        "CriticalGK2/TensorCutDuality.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "cdb718067c264e71178492414d8645bb6b18df2d4eb8b2f75f29555e2ace7f3f",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/CutEvaluation.lean",
+      "source_sha256": "d2238f7b0bf0b63822d6ddc0b86fd922c4f4af3d25544ee4c5bb0eb2d24c3a54",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DualDegreeBridge.lean",
+        "CriticalGK2/HomogeneousCutTensor.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "c212099d1226199aa11e1b8ed4b2cc4cf791165d348d8a1a7f16cffcba0b3989",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WordTensorSuffix.lean",
+      "source_sha256": "4254546dfd77efef0fdb05e805f0c9b156333a99bd7f4d325883958b513e7c18",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/WordTensor.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "2bfb9f0c33a22806167afd8336bf051e44bb0d157be97b83bd03c444b52f1513",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualSuffixContraction.lean",
+      "source_sha256": "a3705341373b458c79f01eeb913aa4a58a03143ab98c7da1988d764688ceb678",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/WordTensorSuffix.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "598e2c949d3abf2ffa83c99a5e3758bd17566b6c2c1ecc2e5ea9d544bb1667a3",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualBlockMatrixKernel.lean",
+      "source_sha256": "5a53ba742f81ae7e4f0f36bfcafaff3906cb9e1f560a0fffb5e5d8149c2bf555",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualSuffixContraction.lean",
+        "CriticalGK2/DualWordBridge.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "e01f8900a7f69d7aa339b7a0a8f14f7df4cd1aa6c264eed931caa3cb3f95803a",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualBlockPowers.lean",
+      "source_sha256": "a9a644f75686a9557b569172316edbb4bdbd7c68fa9ec497b4835a4ba15d348d",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/LocalContainment.lean",
+        "CriticalGK2/StemPolynomial.lean",
+        "CriticalGK2/WordProducts.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "19a4e8ef1b01b593ad00f27e5ad7565dc06b487a4e473ce4ce1a932e2ad882c1",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/BlockPropagation.lean",
+      "source_sha256": "23756ed02f75d1c174d8b09f4305d269770c8d393339f9dc7358b63c0bef67f7",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualBlockPowers.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "95e35174cb595f9dc3d3132639840337a41b1d94188c536b2956df7da4ab54bb",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/BlockTensorSupport.lean",
+      "source_sha256": "20146f784ebdecf7ba499891a52599252c71d214b84fbba5089f47a075ebf1f5",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/BlockPropagation.lean",
+        "CriticalGK2/DualWordBridge.lean",
+        "CriticalGK2/LongCut.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "be6d7f44a53ee5e00ebf7b50471603f906d69b90891e2d737ea40bf538ab80f8",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/DyadicCoherence.lean",
+      "source_sha256": "b25af9c5cc5c13e2f1e755dcc0373503620cb61a5e6488de967b70375ee2470b",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DyadicDegreeCast.lean",
+        "CriticalGK2/PrimalCompletion.lean",
+        "CriticalGK2/WordCoherence.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "1a72b965f30c413ebd42a01ea1298e28cae0d904111edc6c04456fee11e8b67e",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/DualFamilyBridge.lean",
+      "source_sha256": "62344a0c0e4d1771c12e81d1469c39736db5db49c0df4e889d190b77544f071b",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DualDegreeBridge.lean",
+        "CriticalGK2/DyadicCoherence.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "65aaa59dcae3f3021069a9c078fceeb61849b77965d59cade7897a5ecf5928d8",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualLocalPI.lean",
+      "source_sha256": "6bcbdc99994c7d2d3107d7bdd34e957d828243f8fe6160ca5b3ed1feb616ed1c",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualBlockPowers.lean",
+        "CriticalGK2/DualWordBridge.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "8751ed0998a01dca8b818c5784b0e32d5e6bc47e4d296d99e84d17bc4af8c1fd",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PolynomialStages.lean",
+      "source_sha256": "a1d55a9f12a35ce2e0abbd191bfd69c5e78eaa474fe234ac9dde7a024f8eeaa4",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualBlockPowers.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "d812435ea0606b4300b28ea9d21819eac01e15fc2eb994fd8a20a48593d19f41",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/DualStageSteps.lean",
+      "source_sha256": "734e960117b9774c82f10d0c749d5c1fc6e3c1cd2e091890f9fd8a5735fca1d4",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualLocalPI.lean",
+        "CriticalGK2/DualDegreeBridge.lean",
+        "CriticalGK2/PolynomialStages.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "53d326ff21e34192a80dcf22a1cde7b0d03ced8ad3ff7cf3f92725b75ac84b86",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/RootContractionDuality.lean",
+      "source_sha256": "ae7ec396c55b9f7ea8ddf1d8fb6b60c49b848f0224e764fe3e4caf66c4b5dccb",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/CutDuality.lean",
+        "CriticalGK2/DyadicDegreeCast.lean",
+        "CriticalGK2/WordSurvival.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "ea7b98bd0b30f05e79293b6c7760e023a0caa6e4ef9d940dafb8b2632aee5d5e",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/RootContractionTensorBridge.lean",
+      "source_sha256": "52742e9a138c64becc201cc1f33f37f43836af687c88bc0b1b428fe01390447c",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DualDegreeBridge.lean",
+        "CriticalGK2/LongCut.lean",
+        "CriticalGK2/RootContractionDuality.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "117e202bebe062c2001e52c6c08cf1b4dea24a90aa404f58931ca84c2077cecc",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/RootAlignedContractionBridge.lean",
+      "source_sha256": "371f2593417d0ae151323e702faf799500e875b54163c953224246c9d8e996be",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualSuffixContraction.lean",
+        "CriticalGK2/RootContractionTensorBridge.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "37c57e8c9d31375e04dc70ff8f0f205e9e17e2ac1f610c87cd461b65668cd0a4",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/LongCompletionEvaluation.lean",
+      "source_sha256": "105487184cd14722f326734e710fb70144c03b982c369b4a302608e547ad04a0",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualBlockMatrixKernel.lean",
+        "CriticalGK2/BlockTensorSupport.lean",
+        "CriticalGK2/DualFamilyBridge.lean",
+        "CriticalGK2/DualStageSteps.lean",
+        "CriticalGK2/RootAlignedContractionBridge.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "7e17c23e028f01e47c7e01f26d6aa19876b21f68358ca12490569f7981323e5a",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/FamilyEventReadback.lean",
+      "source_sha256": "15503af7f1b56fdec5148a5c5b161de2c60669ae3052c2d3be74835cccbe1789",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/CutEvaluation.lean",
+        "CriticalGK2/LongCompletionEvaluation.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.actualDualFamily_allCut_evaluation_zero_of_event",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "87e9bb8346611e0e31d68cc58b16fa5350944dcb28269ec33e5ba858e9c63582",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WordConsumption.lean",
+      "source_sha256": "ceb156eb65c8e2ab5c677299e9e19dd9e0aa136cd5d1dc6292f787a878f4ab28",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "6170b12d16411781776d40271ea45172a78f11ec41a24117698dbf8b4201e00a",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WordSingleCoefficient.lean",
+      "source_sha256": "b215a8036bdd2848f60af5e0c40a3239eee0c9f337fbcdfab8cd0e6c74357403",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/WordConsumption.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "4377fa62bf4014b228778a7a1932a44a24f15c7ed967503bda6f68b9d1cf1cdb",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/SuffixAutomaton.lean",
+      "source_sha256": "8ba86e874be0ef067e3271e86cd39eb3e4f325936941b09ee6c30d25faec9354",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/WordSingleCoefficient.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "5f56709e228e493cde3acd12d8d7d56dc1085d078f9d1b4365f05ccf8f3a21b5",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericMatrixCoefficients.lean",
+      "source_sha256": "0d96de79a928ac58e30ff876f39efb37fa47557e7aafc59cb416a27d7c3d9190",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/SuffixAutomaton.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Automaton.generic_automaton_coefficient_identity",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Automaton.headValue_coeff_eq_genericMatrix_pow_coefficient",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "2bd609a8696255357f8115594d2c0bd798de9ff984f6fd85840cf459c92d5693",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericMatrixCoverage.lean",
+      "source_sha256": "f929bb1b4cead8a15921076274fba3b3d0727a22f7388159ee205df6f79d7cde",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericMatrixCoefficients.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Automaton.exists_genericMatrix_representation",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Automaton.genericMatrix_coefficientsFromMatrix",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "eb64b1f692724777fcbebb0fcd58b4213491306841304b1ca5f87e7b26542662",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/Unitization.lean",
+      "source_sha256": "9caa972f051ece8eb5050138817aab9b6a1db4b1737fc1781ad05eb82adea29c",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "07efae30dca2145d4eb6ff77b06b83e5b4058443dfcb41753fb39e06b64948e0",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/MatrixQuotientDescent.lean",
+      "source_sha256": "63ffd4635768e3150e7ddcb031792e9b104c71281ce60f68c06c7eb070621a84",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveQuotient.lean",
+        "CriticalGK2/Unitization.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "391e76a0fd0db865b1b45d61f29f4fafd3e9e4758643dd7d935a7a4ce68e781c",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/AutomatonFiniteEvaluation.lean",
+      "source_sha256": "17b1042c100e9ab22639a293eeaa8b73b6790b645b6fd2d3e123d22494ab82be",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericMatrixCoefficients.lean",
+        "CriticalGK2/MatrixPI.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Automaton.binaryEvaluation_single_finite_word",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Automaton.finite_automaton_coefficient_identity",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "cb249a47972e15ffc5b49761e4291959fa6068ae007ee0c935c5e5d0d56d2fbf",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/AutomatonScalarReadback.lean",
+      "source_sha256": "e21c4ff6d4c0a29d1b48195730aa4e93c8a163fe976a3148f9aa0ca7992f20d1",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/AutomatonFiniteEvaluation.lean",
+        "CriticalGK2/DualWordBridge.lean",
+        "CriticalGK2/ScalarReadback.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Automaton.evaluatedHeadCoefficient_eq_extendedPair",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Automaton.genericPowerTensor_quotient_zero_of_evaluation_zero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "c77b025037f2e066667d50c296c2565b794d7618ecc8c3b75bb22655a14f1e8f",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericMatrixDegreeBounds.lean",
+      "source_sha256": "1f7b17aa54eb52d4b3ef4af2a920809704dc8cae27d763e9f7a6bf573937c41c",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericMatrixCoefficients.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Automaton.genericMatrix_pow_coefficient_eq_zero_outside_window",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "3ef908134cd5cd01a675a7f44317238a6dcf0cfd3131374cc3e239e100d26123",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/SameFieldReadback.lean",
+      "source_sha256": "b3480ffa275e9b3668629eb4e6cc29a645415bc80404741f788d2c857fefe7d2",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/AutomatonScalarReadback.lean",
+        "CriticalGK2/GenericMatrixDegreeBounds.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.sum_homogeneousProjection_eq",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Automaton.genericPowerTensor_rid",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Automaton.homogeneousProjection_genericPower_mem_of_evaluation_zero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.scalarExtension_rid_mem",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "10160e46de7e6729e20f02f3a15b4983948d9dbe499df3e7e68da94b9f8ceb77",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/MatrixNilReadback.lean",
+      "source_sha256": "f22b893e052f60189c76ac620921d687c801dd928bcc4f6a5e21ffccc2c3a1a2",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/CutDuality.lean",
+        "CriticalGK2/GenericMatrixCoverage.lean",
+        "CriticalGK2/MatrixQuotientDescent.lean",
+        "CriticalGK2/SameFieldReadback.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.genericPositivePower_mem_allCutSubmodule",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positive_matrix_nil_of_allCut_evaluation_zero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "c40d1f22d13ddc2d9d5694bd59bf74bd5f4677bb257d17852e07e0e73ad4f58f",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveComponents.lean",
+      "source_sha256": "99587dc32b557e7596b953162b2ea874283700fa04178a44ca8177da21059122",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveQuotient.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "efe7f0fff7d5e298e4f140e1251d1f9c8550526cab95efd4a3dc15911b7690de",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GradedSurvival.lean",
+      "source_sha256": "bbda2a05f8be184d24dbf6dde4f762f133ba7eab760ea2f3d1be929cde352a21",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveComponents.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveAllCutQuotient_not_finite",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "934273a4bd269c3ec6e91165fbfeed1ad15a2589f482b2b93921714198023172",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PrefixStages.lean",
+      "source_sha256": "0c54dca18ed2a828f2a2efbd53e369df3b76f4a001a1d90b1a1a6f15fc2dddbb",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DyadicRoots.lean",
+        "CriticalGK2/PolynomialStages.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "e3148996524f90c48d6ad3191e2e847eefc5bddc2fdf364acdb1adccd2c226c1",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PISegment.lean",
+      "source_sha256": "2b324766c9d1d620161a398cb62fee4e6df105c3b57656f869ea10e4de56774f",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PrefixStages.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "ffb4ef182ea7b4a57eb99eb343ce927d2e2e91a0ac67cd698450f126b90ce53f",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/StagedSpaces.lean",
+      "source_sha256": "370786ec8eb3e68ae8ebd9142c06dd9d887dbbbc4a1dac17527e7a6aa77ba166",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PISegment.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "a1a8b5f17e6e60999486b7eca09cca6b4e47a17d7d05c46fe7563e166a02ddfb",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/InfiniteSpaces.lean",
+      "source_sha256": "c487ead0ee19caa94b4742eb562c9b6e47bac375fb15fd1f2062ac2927fc8f7e",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/StagedSpaces.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "14edb65dc3fd1cb7a8dae5cce8108566385a895a34f13da5db5c6a16e2ee5a36",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ConcreteConstruction.lean",
+      "source_sha256": "c105f9cc657433ae93972ff971c3009b8cb6f53a8f2a0d15840067fde440ed07",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/BlockPropagation.lean",
+        "CriticalGK2/DualFamilyBridge.lean",
+        "CriticalGK2/DualStageSteps.lean",
+        "CriticalGK2/GradedSurvival.lean",
+        "CriticalGK2/InfiniteSpaces.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.constructedDualData_coherent",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.constructedDualData_ne_bot",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.constructedPrimalCoherent",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.constructed_component_nontrivial",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.constructed_dual_endpoint_killed",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "5ab0736867de82f63a821ad5c78c61686432f43def35a7e0747bc94d6b0f0c23",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/SparseSchedule.lean",
+      "source_sha256": "04938c544559adf8458e45d343fd30d186e8fe5f9756078aefe8adc35ac61406",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "02abbd196ebf7551b5e501a1e2db07a83fecc3f0680dc5e9615001230d360c77",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/TargetEnumeration.lean",
+      "source_sha256": "f23bd4f9398b0fb8970a4c46dd0ede79d3330ff3addea9e92411703c5c254d10",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/AutomatonFiniteEvaluation.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "af37f3647c0714f48e7132100f21349ac8dc989df53156edb51291d797e1dcbf",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/SparseConstruction.lean",
+      "source_sha256": "705a94d0ede3946b9d6c9e5fc325e4b5872853ed90014bd7e03faad539b6ff16",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ConcreteConstruction.lean",
+        "CriticalGK2/SparseSchedule.lean",
+        "CriticalGK2/TargetEnumeration.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.scheduled_construction_alignment",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparseDualData_primalCoherent",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_all_automata_endpoint",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "3106381d440c86eddc1f7ea3cf53eba3496d0043f0c515f5d0b617e3facd0316",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/VersionOne.lean",
+      "source_sha256": "4b22bc8f2e0d6bdd958add828af6c8bf119acecc762092c33202aeeecedf5ad6",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/Unitization.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "b14fff81bafbf154d0f729ea59554df9db362b3255bb0b013b5ad96e24cf5c42",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/SparseMatrixNil.lean",
+      "source_sha256": "1851bf6eb0e01127597778418f94437128776cf20c4fc9ff2a45a5791459f0be",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/FamilyEventReadback.lean",
+        "CriticalGK2/MatrixNilReadback.lean",
+        "CriticalGK2/SparseConstruction.lean",
+        "CriticalGK2/VersionOne.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.originalField_endpoint",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_allCut_evaluation_zero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_positive_matrix_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_unitization_matrix_algebraic",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "ecf026e054834a2b5e861edf9357ecbc8750cd161cdae1e3724738c4f207c89c",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/NormalLanguagePath.lean",
+      "source_sha256": "501aaa5648783d49b26b525a18ef304bc5fa7f2c1a4bb17529532098e77409cb",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/FactorComplexity.lean",
+        "CriticalGK2/InfiniteWordPath.lean",
+        "CriticalGK2/NormalWordFactorial.lean",
+        "CriticalGK2/SparseMatrixNil.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.normalWordLanguage_factorClosed",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.normalWord_power_forbidden_of_element_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_exists_normalWord_stream_of_every_length",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_normalWord_stream_not_tailPeriodic",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "144d52584756722c1118834c30bd45c5dd3b98b74013769e1157ecd043c6ef39",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/NormalWordGreedyBasis.lean",
+      "source_sha256": "954b5c632abd74f7b6ee5c61e3b1c8cd8d5f86d940a61a69670756674090d198",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/NormalWordFactorial.lean",
+        "CriticalGK2/PositiveComponents.lean",
+        "CriticalGK2/WordTensor.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.card_normalLengthWord_eq_componentQuotient_finrank",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.exists_normalWord_of_root_ne_bot",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Greedy.card_index_eq_finrank_span",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Greedy.family_linearIndependent",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "3aabd782246fa1c68f00139123323ed0e06f4043f9a6401ead90c27cb3dd04ad",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/NormalLanguageSurvival.lean",
+      "source_sha256": "ae9d1dab32409336bea1952ab9731becef9f55a9aa94ec5140e1c4c1fb4be606",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/NormalLanguagePath.lean",
+        "CriticalGK2/NormalWordGreedyBasis.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.factorComplexity_le_componentQuotient_finrank",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.normalWordLanguage_every_length",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.originalField_componentQuotient_finrank_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_componentQuotient_finrank_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "9b6c1250e6cb50e1cd3d695e82348e11850604c66abf55242e19dff7349207a8",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericNormalLower.lean",
+      "source_sha256": "530e0c53ba565002b8d786871309d3ed2b04c53c79377b9bf502b4f01fff9cb1",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/NormalLanguageSurvival.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.GenericLower.card_normalIndex_eq_finrank_degreeImage",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.GenericLower.degreeImage_finrank_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.GenericLower.normal_factor",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "87b637d3157c98ff0c19761a69b7b47570e7292dd9a7e86603da14cac42ccc3d",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualResidualFinite.lean",
+      "source_sha256": "72289409981c140ac8cc14a2d3e69b2e80efe9aad108d5362b461951c937a339",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveQuotient.lean",
+        "CriticalGK2/SameFieldReadback.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.finiteTruncation_finite",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positive_residually_finite_dimensional",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordTailSubmodule_mul_left",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "ec1e4af4f9fc3dd57c9baf583d2c312e0725c7b0a875110f97b18a65f78d8417",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/HomogeneousIdealZorn.lean",
+      "source_sha256": "ff88a27a3ac65367334cf7c0ccc0914846c6f73e12c0aebf01a58586ecd9ee79",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualResidualFinite.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_maximal_homogeneous_noWordTail",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.idealChainUnion_homogeneous",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.idealChainUnion_noWordTail",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordTailIdeal_le_idealChainUnion",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordTailIdeal_le_of_length_monomials",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d222b1d30f92ce4e856067bc60df1ee175f53439af982c41e35622bfe8ab2bdc",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/HomogeneousIdealQuotient.lean",
+      "source_sha256": "7bc33f4f00d75dbad4dfb26c6af9bc0f0219d9b12e00b93d6da786d0be7669f8",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousIdealZorn.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_homogeneous_ideal_infinite_with_finite_strict_quotients",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordIdealQuotient_exists_short_surjective",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordIdealQuotient_finite_iff_tail",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordIdealQuotient_not_finite_of_noWordTail",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d94941b5a67c3c6616a4bf2dd7d0632fa67fc4ba7ecc330709f7c104642bb4ee",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericHomogeneousGrading.lean",
+      "source_sha256": "f2d4773557e4ac3b26e72119f685d1708238508ac3e40bf08cd0582da7cc1311",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericNormalLower.lean",
+        "CriticalGK2/HomogeneousIdealQuotient.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.HomogeneousGrading.degreeSpace_isInternal",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.HomogeneousGrading.degreeSpace_mul_mem",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.HomogeneousGrading.exists_finite_homogeneous_decomposition",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "8581fda7764c5c2f8d652b2ef27b110f09c500a98606b4b30e1d5f8b987c8cd3",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualCutDimension.lean",
+      "source_sha256": "a45a8cc89a5146074b1ee6419c142f80d4dfd389808f7c3d014223635c2ea14a",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousCutTensor.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.componentQuotient_finrank_le_cut_sum",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "b3342672965cfabb55f1601077d37840331dacaf82699955a77a8760b270fbaa",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveGrowthFiltration.lean",
+      "source_sha256": "0472f38ceefc2236b551118e7ab339d1c171114ba6058b3f4e552522ce988cc9",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualCutDimension.lean",
+        "CriticalGK2/PositiveComponents.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveDegreeGrowth_le_cut_sum",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveDegreeGrowth_le_uniform_cut_budget",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveDegreeSubspace_finrank",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "841274727ba3c1808544551f591999a41d94e007521c9258c60291376a521179",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveGradedSum.lean",
+      "source_sha256": "3274416641da92cdd4843535f6e920d7cbda12c3335487b24ddbe09ac301d6b7",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GradedSurvival.lean",
+        "CriticalGK2/PositiveGrowthFiltration.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.component_sum_le_positiveDegreeGrowth",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveDegreeGrowth_eq_component_sum",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveFiniteDegreeSumMap_injective",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "2ab85e0c708c584030c5f3be84ed0d9db5c1df50b4fc6036f3224eb564604705",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualGrowthLowerBound.lean",
+      "source_sha256": "0d294be164505d640d7a3f8402d385ec505230c1ef39b20c50d5f23f40e77f72",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/NormalLanguageSurvival.lean",
+        "CriticalGK2/PositiveGradedSum.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.originalFieldDegreeGrowth_quadratic_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.originalFieldDegreeGrowth_square_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "7a6926f50666b3cb9aeaec94c470d4579054f5a84fefd34ce82748f54a581769",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/TensorCutRank.lean",
+      "source_sha256": "4926597ddd42ee261fcf5e5617cb5616852b64cb36404a21928d2891ac07fbca",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/LongCut.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorCutRank_append",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorCutRank_prepend",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "387830504b3dd9529f8cff0f4d609a7dcf42e710cc238179c2b84987cf2abd53",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/FreeTailCutSupport.lean",
+      "source_sha256": "bc186f7f8c856d2348b1426974dc37d9ed2a1bf66912b7fa6c16a6f168e325fa",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/TensorCutRank.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.ContractionBudget.freeTailTensorSpace_prefixSupport",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.ContractionBudget.freeTailTensorSpace_suffixSupport_finrank",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "f54978378b9215a625003dc462dbd789adc0628754ed186e1ec2e9f85b109758",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/TensorCutRankTransport.lean",
+      "source_sha256": "4ef84bea0b775bb983e4fdc768b5b723b07d9c397e73e609ff39474ee0ea2af5",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/TensorCutRank.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "f9b03c5d7b8259ccf3b8dcc69a595d2e363b89312f2847238ad30ab8800a7d07",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualWordCutRank.lean",
+      "source_sha256": "163b1878fe1f3f0632e73aca56d3b2afa9fefd30a03853f0e227601874b4a52b",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PolynomialStages.lean",
+        "CriticalGK2/RootContractionTensorBridge.lean",
+        "CriticalGK2/TensorCutRankTransport.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.wordCutRank_append",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordCutRank_prepend",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "59e8479b505aeeedd4277947258f9a7294504355a162131572e8a0dd3d652aa8",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WaitingCutRank.lean",
+      "source_sha256": "634938963a94c3ee66f0dee447ffa4f5f26538995c4922df39ddb298891b62b9",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualWordCutRank.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.polynomialCutBudget_waiting",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "03d5cefbda4d1de449736d63e0d002ddb5f9d1f335d69f79ea71e29a11544324",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/StemCutSupport.lean",
+      "source_sha256": "c9f9af4994b1d36a10e023d4bf008d2bba80712b98cfcbf34f56f646a5092e2e",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/FreeTailCutSupport.lean",
+        "CriticalGK2/WaitingCutRank.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.actualStemInsideCut_suffixSupport_finrank",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.stemSpace_dualCoefficientSpace_eq_actualStemDualSpace",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d00ea246a88dd0f52a8f70a01e36eed0dadf6a58f89265f89fb1808a53606aa4",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualStemBudget.lean",
+      "source_sha256": "e5ad361b63a1b3ab6568026a9816318f63f7bc07bd90e24c5b9223d6e8f7d51e",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/StemCutSupport.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.actualStemCutBudget_eq_twice",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.actualStemCutBudget_waiting",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d2df2530f9212060541774a8a61f2feb036f2f6ba0538b3e138ab917d2cf52e3",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/RootCutSupportBudget.lean",
+      "source_sha256": "42ec356071fde4a886401a60fa36267429f0048159a79079df3bd609cf558aa1",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/FreeTailCutSupport.lean",
+        "CriticalGK2/RootContractionTensorBridge.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.actualRootPrefixContractionSupport_eq_tensorPrefixSupport",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "5c18ebcbfd96659e1a5c843daf799963fb9c264410eff89a5f80edd36081a5cf",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/TensorProductCutSupport.lean",
+      "source_sha256": "9ca765ec0da11c25972b26e56a49650aebc0953b5fe12e868f9508c4489130f7",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/FreeTailCutSupport.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorTailProductSpace_prefixSupport_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorTailProductSpace_suffixSupport_finrank_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d26d41eb8fe865276a9897ef2fc5bcee876665a05373b6130dbe83313ed6e320",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/TensorSupportDimension.lean",
+      "source_sha256": "5f800eb547904d60870c0736e19489329196c5c1e30b17790f8651ca2f89b071",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/FreeTailCutSupport.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorPrefixSupport_finrank_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "0cbd73f645d833ba270557b9e3c67daa96f7ab7c7f040f3641702ca0a31bca9a",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualSpaceCutBudget.lean",
+      "source_sha256": "78b0a519d708e3e3bac8c9d6a78555e6db81aac9dc28c2a9a3dbaa6337ef8641",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualStemBudget.lean",
+        "CriticalGK2/RootCutSupportBudget.lean",
+        "CriticalGK2/StagedSpaces.lean",
+        "CriticalGK2/TensorProductCutSupport.lean",
+        "CriticalGK2/TensorSupportDimension.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.prefixState_actualDualCutBound",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.waitIter_cutBudget",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "fe07ee59f1aab5a75a9f42163b10b8ced0fc76b64a86c37dc1521a3c6ad53880",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveGeneration.lean",
+      "source_sha256": "a7da1d7ab499038db5eb555471d830260329eab2500e0ddd33cb0095bc8aba62",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/SparseMatrixNil.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.originalField_two_generated",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveAllCutQuotient_pair_generated",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveAllCutQuotient_two_generated",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "aed9bd45ef36874f161fc91e8e3869a7b6c4d4c9cee54d77a02404397dd2681e",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordFiltration.lean",
+      "source_sha256": "d1d33a235bc857c83f5e65bd6096448c4cbaee8a3c6ae46915773a2be6521240",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/NormalLanguagePath.lean",
+        "CriticalGK2/PositiveGeneration.lean",
+        "CriticalGK2/PositiveGrowthFiltration.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveDegreeFiltration_eq_wordFiltration",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveDegreeGrowth_eq_wordSpan_finrank",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordImage_letter",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordImage_mul",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "f44955ee3afefc36d3bb15277fa08973ccef5a4490093a3b20b556cd3c11ff1a",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GrowthExponent.lean",
+      "source_sha256": "3471203a97c47b787cf1063325026339b90fc45c225e44e11f5525737e2e435b",
+      "exit_code": 0,
+      "project_imports": [],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Growth.gkExponent_eq_two_of_quadratic_lower_near_two_upper",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Growth.upperExponent_ge_two_of_quadratic_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "aa1f5b55ca51e0d1c3ac20834bbadee05abc8f66fbf1d1077aafdd8418ebe11e",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/SparseBudgetIndex.lean",
+      "source_sha256": "ef389df4cd8fe48e1e16a01bd1fde109d41c628c41dd379ec69c79bad99b76d6",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/DyadicRoots.lean",
+        "CriticalGK2/SparseConstruction.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.root_operation_budget_power_le_degree",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.root_operation_count_ge_after_threshold",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "6cd9c5a81070bf7f0ae830a54f025ef125b8ad5669580d905e97ebfef0cc0ff5",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ScheduledGrowthUpper.lean",
+      "source_sha256": "f30d60cadf2e39e1ff39f14f03eccf19b27db5b6b5a19364b20540f8c04957ee",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GrowthExponent.lean",
+        "CriticalGK2/SparseBudgetIndex.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Growth.budget_square_le_rpow_of_power_bound",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Growth.near_two_upper_of_scheduled_budget",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "f2fdb16d3ec2d63fb25b4130365b1455701541e38ff2ed4daa2b14a1ed65e64b",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualGrowthFromCutBudget.lean",
+      "source_sha256": "87dce62e16fd491d1d40e262857879cfaae8cd2be0973a00af8e4de7cac05103",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualGrowthLowerBound.lean",
+        "CriticalGK2/ActualSpaceCutBudget.lean",
+        "CriticalGK2/PositiveWordFiltration.lean",
+        "CriticalGK2/ScheduledGrowthUpper.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.sparseDegreeGrowth_gkExponent_eq_two_of_cutBounds",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparseDegreeGrowth_le_scheduled_budget_of_cutBounds",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "f7627de46472cee813c233c7c9a0ebda6db5b5797e86beb22bfe05271de65879",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualEnvelopeGrowth.lean",
+      "source_sha256": "508878febe1fb2d9f9fb77aac0bec2a978b29fe66111716a7cd682b7e22c89ae",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualGrowthFromCutBudget.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.root_supportBudget_square_le_envelope",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparseDegreeGrowth_envelope_upper_of_cutBounds",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "a2c0240f14b87ac668bdf0c896d7e9c7b2ad61c317a41cc22a6ce13a3af25429",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ScalarExtensionUnitization.lean",
+      "source_sha256": "b6e5e58e4763c8709d5e73800ceb15d731ad88d1f71b94fbd6bc87e48b0de6f3",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/VersionOne.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.scalarExtension_unitization_matrix_algebraic",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.scalarTensorComm",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "f1c4a8f189b95eac86427ed55f3bdc816d3b78f1ec6ca83c57906be987d43077",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ScalarExtensionPositive.lean",
+      "source_sha256": "51c28f7721d28a9fd4f48b273821cff070f057cc872a2b8f014790e47248df8c",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GradedSurvival.lean",
+        "CriticalGK2/MatrixQuotientDescent.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "2fa0359bdf5d1b4635a55474d1dd6931d41e452b5306a8431f94c1f37905cf68",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ScalarWordTensor.lean",
+      "source_sha256": "9d423baf56e2cbd383a40727dde616eb0ef5868b430ad38ae92ac3a3bbf07cfb",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualWordSpaces.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.coefficientTensorMap_mul",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.coefficientTensorRingEquiv",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "0e6f7d1795f5e64c097889b8915497a5394364df5a83d0b4f1c4e5fc3ca3b944",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ScalarExtensionPowerReadback.lean",
+      "source_sha256": "1a0673cd4d49901ed7cadc3296117862cccb206cd6a07e722f336c6434d89ab5",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/SameFieldReadback.lean",
+        "CriticalGK2/ScalarWordTensor.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Automaton.coefficientTensorMap_genericPower_mem_scalarExtension",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Automaton.genericPowerAmbientTensor_projection",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.scalarExtension_linearMap_mem",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "f9fc79fb234e67f4f9e88929b7f7e073bedaed9889200fcaae9e5de7d2ea8f19",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ScalarExtensionMatrixDescent.lean",
+      "source_sha256": "ad3443d02b4171c0a71f050b388c1a323e8cd34ac87a016fd855c3c68ea8095d",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/CutDuality.lean",
+        "CriticalGK2/GenericMatrixCoverage.lean",
+        "CriticalGK2/ScalarExtensionPositive.lean",
+        "CriticalGK2/ScalarExtensionPowerReadback.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positive_scalar_matrix_nil_of_allCut_evaluation_zero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positive_wordTensorMatrix_power_absorption_of_allCut_evaluation_zero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordCoefficientTensorEquiv_positive_constantCoeff",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "2475d403d4f46a510381ad3ef18c5270f8ec3604a62df7e0bd567daf10e1c0ee",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/SparseAbsoluteMatrixNil.lean",
+      "source_sha256": "3c124542012e7a89fe9e7071e068bd5c7589ecb818323ff4193086d4188fd34e",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ScalarExtensionMatrixDescent.lean",
+        "CriticalGK2/SparseMatrixNil.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.originalField_absolute_matrix_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.originalField_infinite_absolute_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_scalar_matrix_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "93894d1aad549b136360eabc04db8bb3085a32b6085fd356940eada6c6a41cf7",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/AbsoluteUnitizationEndpoint.lean",
+      "source_sha256": "54b037ab6e4104bc496a26fa0cbcc5f2c08154c370222c91db6c5735b98107c8",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ScalarExtensionUnitization.lean",
+        "CriticalGK2/SparseAbsoluteMatrixNil.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.originalField_absolute_unitization_endpoint",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.originalField_scalar_unitization_matrix_algebraic",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "63d50f1f68cf2a4eb9ff6f89f044cc1c19b40637e6d1b83c0178884cc92a524d",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ConstructedNilEndpoint.lean",
+      "source_sha256": "b4df98d594aeac3539039f8c6960c4b121ac5c0eca88c5fb3e868be7fb8f1763",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/AbsoluteUnitizationEndpoint.lean",
+        "CriticalGK2/PositiveGeneration.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.originalField_constructed_absolute_nil_endpoint",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "718646e04501d0532fd7271b0a9a3c251dada4a00380ec38db2eb055abdbe6e9",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/TensorFrontProductCutSupport.lean",
+      "source_sha256": "c4f04b91ab82f5bd2d686c744454f02451aecf129e1a71665b8306637966c898",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/FreeTailCutSupport.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorFrontProductSpace_prefixSupport_finrank_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorFrontProductSpace_prefixSupport_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorFrontProductSpace_suffixSupport_finrank_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorFrontProductSpace_suffixSupport_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorPrefixSupport_leftEquiv",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.ContractionBudget.tensorSuffixSupport_leftEquiv",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "0dca3d32c166d5b35744cf220ba0592cbc3b82b7a5b84fbc959dbf34e0bf2ec8",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualProductCutBudget.lean",
+      "source_sha256": "89559c96adec0edeb684be593dd9ebe6d3f7a91d8e8e0b1cb355002efe04272b",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualSpaceCutBudget.lean",
+        "CriticalGK2/TensorFrontProductCutSupport.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.actualDualTensorProduct_cutBound",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "418857b45dab61f4881060a3ceaf43e6d56a48c92d278880877f8607bd13ed26",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualBlockPowerCutBudget.lean",
+      "source_sha256": "84724a0a58f3abda188ba370d3183866ccb5d4479d0781f3cedfce2206632e93",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualCutDimension.lean",
+        "CriticalGK2/ActualProductCutBudget.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.blockPower_actualDualCutBound",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.prefixState_blockPower_cutBound",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "83e7105a4a2b308dc297b372ef3518e18a1d3e7c55fc711592c1bcb47f139841",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/StageFiniteCutBudget.lean",
+      "source_sha256": "f28fb5d2606037286b15365a0ae4388e35223789e6836f592179f33569f55f3e",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualBlockPowerCutBudget.lean",
+        "CriticalGK2/SparseSchedule.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.resetPrefix_cutBudget_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.stagePrefix_cutBudget_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.stageSpace_cutBound_le_next_budget",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.stageSpace_waiting_cutBound_le_budget",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "4e68ee43dfe2d639ee7ea305d5bba48d49696dbfc78b04607bc20249509431b3",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/SparseGlobalCutBudget.lean",
+      "source_sha256": "f4814a8992dff6daa0424557a6ee701c78af7e2fe5e6b8f15642001109668fbc",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/SparseBudgetIndex.lean",
+        "CriticalGK2/StageFiniteCutBudget.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.constructedDualData_cutBound_before_start",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparseDualData_cutBound",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "84885bdcd42eceeda71416ac23e8068f111f18450c04a6522a1a804f2be414d4",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ConstructedGrowthEndpoint.lean",
+      "source_sha256": "0c6a375c38930d5c282b78d9c1208fdc9f6891c0968db37590ddd8ebc5a040b6",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualEnvelopeGrowth.lean",
+        "CriticalGK2/ConstructedNilEndpoint.lean",
+        "CriticalGK2/SparseGlobalCutBudget.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.originalField_critical_gk_two_absolute_nil_endpoint",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparseDegreeGrowth_envelope_upper",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparseDegreeGrowth_gkExponent_eq_two",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "78787487c5681585609515b47cf5993ecf4fe5fcbe3f76e31c9030e5e70fa789",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/LogarithmicGrowth.lean",
+      "source_sha256": "71f415458c22638a502ed6965887fb89918c3d3e0d903d631afd020141e51a1d",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GrowthExponent.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Growth.limsup_logarithmicGrowthRatio_two",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Growth.tendsto_logarithmicGrowthRatio_two",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "6cf455c40c53e1dda535b14fa23a00863925a70a56923b8d50efdf2ffe315348",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualLogarithmicEndpoint.lean",
+      "source_sha256": "04c1240c50fa7f17499b3e41b63ab8a46d968a704d4fd61dc6a294fecc2bc188",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ConstructedGrowthEndpoint.lean",
+        "CriticalGK2/LogarithmicGrowth.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.originalFieldDegreeGrowth_logarithmic_limsup",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparseDegreeGrowth_logarithmic_limsup",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "34a764289587954cfe14ff308dbb3487272040a7cee6618038f9ebe778501418",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/HomogeneousQuotientInputs.lean",
+      "source_sha256": "47e753623bbf565b4b3283b583ba462fe00aeee9362ae209b22b918bc045a3e7",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericNormalLower.lean",
+        "CriticalGK2/HomogeneousIdealQuotient.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.sparse_exists_homogeneous_infinite_furtherQuotient",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_furtherQuotient_degree_finrank_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_furtherQuotient_word_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordIdealQuotient_degreeImage_ne_bot",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "45cbb42248ae8191c7e844be3c6f2b23e40867074631c2f1ff375b84645edce9",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericGradedGrowth.lean",
+      "source_sha256": "43eac4787ae950575d74bfa33b514288f36fb5cca93ce81646b3c0793c538588",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousQuotientInputs.lean",
+        "CriticalGK2/PositiveGradedSum.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.idealPositiveDegreeGrowth_eq_component_sum",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_furtherQuotient_growth_quadratic_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "9774647d8e22b2c7a447733a468b5c43fc3d9406ed7ef49f3055fbc2b76ffea6",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericGrowthTransfer.lean",
+      "source_sha256": "8a216cb6b2905bca18edf1ee8501f0811de58366fca5158b25009de81d595211",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualLogarithmicEndpoint.lean",
+        "CriticalGK2/GenericGradedGrowth.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.furtherQuotient_envelope_upper",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.furtherQuotient_logarithmic_limit",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.idealPositiveDegreeGrowth_le_original",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "0aa0e610a85944104e5f906276e697dd3b277cd8b4b84986c62573aefdbdaae0",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealQuotient.lean",
+      "source_sha256": "b4c80ebc23b7840c3cdebbd127f7c084c17e2e0391cd273a4fe94cb928b43691",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousQuotientInputs.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.homogeneous_noWordTail_augmentation_eq_zero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealQuotientMap_surjective",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealQuotient_nonzero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdeal_scalar_split",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "843d3c7d3863d2810f47981ac208bdb8cc4e2ba39481c0ce23297e52bd2bb19b",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealGrowth.lean",
+      "source_sha256": "fef7bf96cf559adf7311652e2079396d739c85190043ca8b41d9b0f044fa9568",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericGrowthTransfer.lean",
+        "CriticalGK2/PositiveWordIdealQuotient.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealDegreeGrowth_eq",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positive_furtherQuotient_envelope_upper",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positive_furtherQuotient_growth_quadratic_lower",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positive_furtherQuotient_logarithmic_limit",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "e65794d3619f97b6fffe63175d38863b5a9a2ad1024758cc7369f3df4c799ba3",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealGrading.lean",
+      "source_sha256": "c6ad8046ddf8395ffc8bae3b1395d22e3b95881a2057a5586fbb68d04dd6902f",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericHomogeneousGrading.lean",
+        "CriticalGK2/PositiveWordIdealGrowth.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_positiveIdeal_finite_homogeneous_decomposition",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealDegreeSpace_isInternal",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealDegreeSpace_mul_mem",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "b10461487c6551778755189f399fd8b8bf8ceba61574af618f8659e43e749a6c",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/LeadingDegree.lean",
+      "source_sha256": "d3e8579ad014518b52bf6737a68873ef05a4a452ad9165065f6db322b507ef86",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousIdealZorn.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.degreeProjection_mul_top",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sub_degreeProjection_mem_short",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "4a2fd61c2fe1b3f3b32e3793b93ca13e111edb48cc27a897dd0728a7adab4442",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/WordIdealDegreeProjection.lean",
+      "source_sha256": "93469605fcd35bab381c0b235ee7af6534f7eb0ec8075038b85ca2d502a2c6e9",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericHomogeneousGrading.lean",
+        "CriticalGK2/LeadingDegree.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.wordIdealDegreeProjection_map",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordIdealDegreeProjection_of_degreeSpace",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "a00931e6939ea77b57afc7332e392ca80a5a97090d1a6ecb9e0b85659815967a",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealJustInfinite.lean",
+      "source_sha256": "2ce455df1d32afcf40bd4b2b2538b96fac3594ade946f1b18ae34200615f38cf",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveWordIdealGrowth.lean",
+        "CriticalGK2/WordIdealDegreeProjection.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealFurtherLinearMap_eq_zero_iff",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealPreimage_homogeneous",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealQuotient_graded_just_infinite",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "bb51298e332e2e96376bace1ec8a85e1d4786c5795e9d136b971baade58e7684",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/InitialDegreeIdeal.lean",
+      "source_sha256": "b00e95703904029b14e9008c9fec3be0e937968f27c364d4f8941a0b0846d1a1",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/LeadingDegree.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.initialDegreeIdeal_homogeneous",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.initialDegreeIdeal_not_le_of_not_le",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.initialDegreeIdeals_mul_mem_of_original_mul_mem",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.le_initialDegreeIdeal",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "231a880043948858520d7327f6b01acc430caa5894d61a3c193485aa7a6a547a",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/HomogeneousPrimeQuotient.lean",
+      "source_sha256": "2ef2f6b61c8a5a9ac640c1baedb359d12575431e0dcd9229728fdc87a8a19b84",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousQuotientInputs.lean",
+        "CriticalGK2/InitialDegreeIdeal.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.maximal_homogeneous_noWordTail_prime",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_exists_ordinaryPrime_furtherQuotient",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.wordIdealQuotient_ordinaryPrime",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "722156dbf829122a3ab350d234fe63a8dd53ca6ce7e5ac07de6c6ecedd76aad2",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericPositivePrime.lean",
+      "source_sha256": "ce691f958d784db21aab7ad61c90e24fd12e917393019b56c399be0d50f3d212",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousPrimeQuotient.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.PrimeInheritance.ordinaryIdealLinearSpans_mul_zero",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.PrimeInheritance.ordinaryPrime_of_scalar_positive_decomposition",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "aa8d122cc217666d72837b36007c7729d8b9e7ce7bd7abb92a4d3863ce76d681",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/GenericResidualFinite.lean",
+      "source_sha256": "b821d776d92487cc4ba3795aed361b09c6c2bccd395215e8b9298fcf4a165e96",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/HomogeneousIdealZorn.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.GenericResidual.included_algebra_residually_finite_dimensional",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.GenericResidual.quotient_residually_finite_dimensional",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.GenericResidual.truncation_finite",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d8e5559a9cbc29e1b8467fc2f668ee7c2a3191100563f5b10eb06cdd259acf52",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealTransfer.lean",
+      "source_sha256": "a9b554fe96480e4ad2879876cd3ecaad4074347690f88f813b43c64a8c186ffd",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/GenericPositivePrime.lean",
+        "CriticalGK2/GenericResidualFinite.lean",
+        "CriticalGK2/PositiveWordIdealQuotient.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealFactor_surjective",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealQuotient_not_finite",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealQuotient_ordinaryPrime",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealQuotient_residually_finite_dimensional",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_exists_positive_prime_furtherQuotient",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "0a3fbde4fa94257f00a0f7fc0e4cc53e6e616d7c88dd9eb622b8bc5ec096eaa3",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealGeneration.lean",
+      "source_sha256": "d88843c6803ccf3deb53beee68f93e897f504a82e6493afb89dddefc1d57d8b3",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveGeneration.lean",
+        "CriticalGK2/PositiveWordIdealTransfer.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealQuotient_two_generated",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d02d30f5c83fe97627aa456539717bfb291e97109e3c8af50d6c50ba8e393d12",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealFiltration.lean",
+      "source_sha256": "1cb0be2a1399b1a5b62e9682dbbc610a8739b436bb679a1ac8f2ace62d920628",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveWordFiltration.lean",
+        "CriticalGK2/PositiveWordIdealGeneration.lean",
+        "CriticalGK2/PositiveWordIdealGrowth.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealDegreeFiltration_eq_wordFiltration",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealDegreeGrowth_eq_wordSpan_finrank",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealFiltration_eq_map",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "2d3987b65ff693f3e1f610d03a61f4ca5bab872ec57785a5848558db23613f12",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealScalarNil.lean",
+      "source_sha256": "db4729f34246255e0844e40771ee407559207a095041183ba32952b88a854c42",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveWordIdealTransfer.lean",
+        "CriticalGK2/ScalarExtensionUnitization.lean",
+        "CriticalGK2/SparseAbsoluteMatrixNil.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealScalarFactor_surjective",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.scalarTensorNonUnitalMapLinear_map_mul",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_positiveWordIdeal_scalar_matrix_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_positiveWordIdeal_scalar_unitization_matrix_algebraic",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "8490b5585b70af8f8d8eff76b4c7f686bbb4ec7586ad68e0342134f7f4cc2ef5",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/UniformGenericNil.lean",
+      "source_sha256": "df413f50d3170eea75d330ed77840ec390a3059aff0f345496666cfcc2129ed8",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/SparseAbsoluteMatrixNil.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.generic_wordTensor_positivePower_absorption_of_threshold",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_uniform_generic_scalar_matrix_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d893f63bf7d51e5f2a0771a8509bfa62b61cd5ae8664c55ed0fdfd74c07cc61f",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/UniformBoundedDegreeNil.lean",
+      "source_sha256": "4429dc1a90ebdfd4df2bc9220e40ad14f693e4d1eb893ea94a6ac0749b3cd36e",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveWordFiltration.lean",
+        "CriticalGK2/UniformGenericNil.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_bounded_generic_scalar_matrix_lift",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.exists_bounded_positive_word_representative",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_uniform_bounded_degree_scalar_matrix_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "90778e5c84046ec7a67786b0cfd3e41ce3e66bdcc09393107f937b7e3a32d7fe",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealUniformDegree.lean",
+      "source_sha256": "a13f5924c395ce314d5af0335862ad1818eef5be444c7b0ec153b88bc0cd0a01",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveWordIdealFiltration.lean",
+        "CriticalGK2/PositiveWordIdealScalarNil.lean",
+        "CriticalGK2/UniformBoundedDegreeNil.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_positiveIdeal_bounded_scalar_matrix_lift",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveWordIdealDegreeRestriction_surjective",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.sparse_uniform_positiveIdeal_bounded_scalar_matrix_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "818be5a2e94d165fa6650d8ae6c96808717f4201cb1a21c4478c47ed76b17a3d",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PositiveWordIdealWordProducts.lean",
+      "source_sha256": "895b4e79145da900ba47a3fdf160cb7f5797084cc5da4109da0c546c09489a88",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveWordIdealFiltration.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealGenerator_mem_degree_one",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealWordImage_letter",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveIdealWordImage_mul",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "db95b84082fb588b55c351fa56edc9a6764d49a3fc0cda32b26bf1111755a363",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PrimeCriticalEndpoint.lean",
+      "source_sha256": "0df6759413bf8f9b3c60137ffeb4557a5beff1dd85b7054f634693dccbeee53c",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveWordIdealGrading.lean",
+        "CriticalGK2/PositiveWordIdealJustInfinite.lean",
+        "CriticalGK2/PositiveWordIdealUniformDegree.lean",
+        "CriticalGK2/PositiveWordIdealWordProducts.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "cb41850d308e62e8c9a18bbc6e7f31a709a6b6b5135d490c320ffd84142bde29",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PrimeCriticalDefault.lean",
+      "source_sha256": "31d3ba26ac92b860e127bf2bc7d5784b0ececa132d9924b372e0a5a948a89182",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PrimeCriticalEndpoint.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil_default",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "7b1a67db109831ceb2a68c52214affb9c9231792eba6a886a1029e9d424c5005",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualPositiveUnitization.lean",
+      "source_sha256": "1be23870cc3a4c7d117c422f4ef46fad74fd33fcd6e032a1376224b2f4a92e3d",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PositiveWordIdealScalarNil.lean",
+        "CriticalGK2/PositiveWordIdealWordProducts.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveUnitizationDegreeFiltration_eq_wordSpan",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveUnitizationDegreeGrowth_eq",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveUnitizationWordQuotientEquiv",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveUnitization_not_finite",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveUnitization_two_generated",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "d77e9fcd4ee715746162ae9e694decd989aad2a92bc70674bcb08d87f7f382ec",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/ActualUnitizationGrowthEndpoint.lean",
+      "source_sha256": "615496303ef871fc9ed6ea6fa8b0f75eda24b3345a5e9b41221337250807a6d5",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualPositiveUnitization.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.positiveUnitizationGrowth_logarithmic_limit",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.positiveUnitizationGrowth_logarithmic_limsup",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "21aef07282415fdb6b09779db8b6fceaa6659c8593c26974c29ef46aa8270495",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/UnitizationScalarBaseChange.lean",
+      "source_sha256": "4bedeb995abe2651af8ee9142e8ab06de19b785d62ce6fbc4c37eac0194336ef",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ScalarExtensionUnitization.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.unitizationRightScalarAlgEquiv",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.unitization_tensor_matrix_algebraic_of_scalar_matrix_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "506e88d971659ec43d9c5651dcf000f32e215b99203652281af5d27cc3cbd270",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/UnitalCriticalEndpoint.lean",
+      "source_sha256": "d8f37da2b3a84d16de815b6a8b81f82393a3127a6006c0bcc3537ec8fed532c6",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/ActualUnitizationGrowthEndpoint.lean",
+        "CriticalGK2/UnitizationScalarBaseChange.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_unital_critical_gk_two_absolute_algebraic",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "185c8146257e2d609339e4fa98261d4221f61f1f9d10a5615234e4b7e511c124",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2/PaperCriticalEndpoint.lean",
+      "source_sha256": "7b30fcaa9140814fcba075e725a5c5bfa22dc28e0d405ceced322339cbef1224",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PrimeCriticalDefault.lean",
+        "CriticalGK2/UnitalCriticalEndpoint.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_same_prime_critical_algebra_and_absolute_unitization",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "c9695cb77737ea6ce8e967972d64409f9c8f63eeaa1264272b8bef427dd897d5",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "CriticalGK2.lean",
+      "source_sha256": "fffe563b190d01f078398b493a825b445d4dc36b63d5930549786f2087717b0f",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2/PaperCriticalEndpoint.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [],
+      "output_sha256": "bf6936088b949f2297ec3336bb9c4f6190701c117e3c606d7fc561b74e03ad4d",
+      "compiler_invoked": true,
+      "reused": false
+    },
+    {
+      "file": "Verification.lean",
+      "source_sha256": "4404a278f2b59f54fd690f770d3f559b2b9fc77adf3ed5b19470dff72faa91ba",
+      "exit_code": 0,
+      "project_imports": [
+        "CriticalGK2.lean"
+      ],
+      "forbidden_syntax": [],
+      "axiom_queries": [
+        {
+          "declaration": "CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil_default",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.exists_same_prime_critical_algebra_and_absolute_unitization",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.exists_unital_critical_gk_two_absolute_algebraic",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalGK2.Actual.originalField_critical_gk_two_absolute_nil_endpoint",
+          "dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "output_sha256": "2533fdd18193e3c5db62192efe00febb62405d3bf4bb01585a79087414e31002",
+      "compiler_invoked": true,
+      "reused": false
+    }
+  ],
+  "standard_lake_build": {
+    "command": "lake build",
+    "default_targets": [
+      "CriticalGK2",
+      "Verification"
+    ],
+    "exit_code": 0
+  }
+}

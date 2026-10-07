@@ -1,0 +1,15 @@
+import CriticalGK2
+
+/-! Main theorem signatures and their foundational dependencies. -/
+
+#check CriticalGK2.Actual.originalField_critical_gk_two_absolute_nil_endpoint
+#check CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil
+#check CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil_default
+#check CriticalGK2.Actual.exists_unital_critical_gk_two_absolute_algebraic
+#check CriticalGK2.Actual.exists_same_prime_critical_algebra_and_absolute_unitization
+
+#print axioms CriticalGK2.Actual.originalField_critical_gk_two_absolute_nil_endpoint
+#print axioms CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil
+#print axioms CriticalGK2.Actual.exists_prime_critical_gk_two_absolute_nil_default
+#print axioms CriticalGK2.Actual.exists_unital_critical_gk_two_absolute_algebraic
+#print axioms CriticalGK2.Actual.exists_same_prime_critical_algebra_and_absolute_unitization
