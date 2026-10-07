@@ -58,7 +58,7 @@ This identifies the unitization theorem with the literal tensor extension appear
 
 ## Implementation choices
 
-The formalization uses a one-hot encoding of PI words, with block length $D_k=(k^2+1)^2$, and an automaton whose states share word prefixes. These choices simplify injectivity and evaluation proofs. The linked manuscript uses a shorter binary encoding and an independent-path presentation of the automaton. The two implementations give the same existence theorem.
+The formalization uses a one-hot encoding of PI words, with block length $D_k=(k^2+1)^2$, and an automaton whose states consist of a destination vertex and a residual suffix. States with the same destination and residual suffix are shared, giving $k_{\mathrm{Lean}}(r,d)=r(2^d-1)$ states. These choices simplify injectivity and evaluation proofs. The linked manuscript uses a shorter binary encoding, with $D_k=(k^2+1)\lceil\log_2(k^2+1)\rceil$, and independent internal vertices for each designated word path, giving $k_{\mathrm{paper}}(r,d)=r+r^2\sum_{\ell=1}^d2^\ell(\ell-1)$ states. Both implementations prove the same existence theorem. The kernel verification record covers the one-hot encoding and shared-suffix implementation; the manuscript's specific intermediate objects and parameters have not been formalized in that presentation.
 
 The PI block uses the alternating product on $p=k^2+1$ matrix arguments. The standard basis of $M_k(R)$ has $k^2$ elements, so an alternating map on more than $k^2$ arguments vanishes over any commutative coefficient ring $R$. This identity is proved in `MatrixPI.lean` by a basis-and-pigeonhole argument.
 

@@ -42,7 +42,7 @@ The Bergman gap theorem, the Small–Stafford–Warfield dimension-one theorem, 
 
 The construction combines dyadic spaces in the two-generator free algebra with an ideal defined by contractions at every word cut. Extending a common prefix tensor preserves the maximal contraction dimension over word cuts. Weighted finite automata and alternating matrix identities impose matrix nilpotence relations, while sparse scheduling controls growth. Normal-word complexity supplies the quadratic lower bound. A maximal homogeneous quotient provides primeness and graded just infinitude.
 
-The formalization uses one-hot word encodings and shared-prefix automata. Its objects, quantifiers, and theorem declarations are described in [Formalization](docs/FORMALIZATION.md).
+The formalization uses one-hot word encodings and automata with shared residual suffix states. Its objects, quantifiers, and theorem declarations are described in [Formalization](docs/FORMALIZATION.md).
 
 ## Build and verification
 
